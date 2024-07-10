@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ayuda Social</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link
+      rel="stylesheet"
+      href="../icons/fontawesome-free-6.4.2-web/css/all.css"
+    />
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Ayuda Social</h1>
+        <p>Completa este formulario para solicitar ayuda de la alcaldía.</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="family-size">Tamaño de la Familia:</label>
+                <input type="number" id="family-size" name="family-size" required>
+            </div>
+            <div class="form-group">
+                <label for="assistance-amount">Monto de Ayuda:</label>
+                <input type="number" id="assistance-amount" name="assistance-amount" required>
+            </div>
+            <div class="form-group">
+                <label for="specific-need">Necesidad Específica:</label>
+                <textarea id="specific-need" name="specific-need" required></textarea>
+            </div>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+</body>
+</html>

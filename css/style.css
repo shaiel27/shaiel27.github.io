@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#body1
+{
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/images/imagenfondo_LE_auto_x2.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100%;
+}
+#principal
+{
+    height: 54em;
+    width: 99.7%; 
+    border: none;
+}
+/*ocultar barra de desplazamiento*/
+::-webkit-scrollbar {
+    width: 0.5em;
+    border-radius: 2rem;
+    background-color: lightslategray;
+}
+::-webkit-scrollbar-thumb 
+{
+    border-radius: 2rem;
+    background-color: white;
+}
+#title
+{
+    text-align: left;
+    color: white;
+    margin-left: 1%;
+    font-size: 3em;
+}
+.header
+{
+    display: flex;
+    align-items: center;    
+    margin: 0.5%;
+    width: 99%;
+    height: 6em;
+    border-bottom: solid 0.15em white;
+}
+#img_header
+{
+    margin-left: 1.5%;
+    width: max-content;
+    height: 90%;
+    border-radius: 45%;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul li
+{
+    display:inline-block;
+    margin-right: 1.5em;
+}
+nav ul li a
+{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 105%;
+}
+nav ul li a:hover
+{
+    color: lightblue;
+    border-bottom: 0.15em solid lightblue;
+}
+.container
+{
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 7%;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    border-bottom: solid 0.15em white;
+}
+#bienvenida
+{
+    max-width: max-content;
+    margin-bottom: 5%;
+    margin-right: 0;
+    font-size: 3em;
+    color: white;
+}
+#p_b
+{
+    max-width: max-content;
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+#img_principal
+{
+    width: 27%;
+    height: 27%;
+    border-radius: 10%;
+    margin-left: 3%;
+}
+.main{
+    color: white;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 98.8%;
+    height: max-content;
+    margin: 1%;
+    margin-left: 0.5%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.h1_main
+{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+.p_main
+{
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.div_main
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 1%;
+    margin-right: 0.5%;
+    border:solid 2px black;
+    border-radius: 5%;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 21%;
+    height:430px;
+}
+.div_main_img
+{
+    height: 10rem;
+    width: 12.5em;
+}
+#barra
+{
+    margin: 1%;
+    border-bottom: solid 0.15em white;
+}
+.mapa
+{   
+    border-radius: 1%;
+    margin: 0.5%;
+    margin-top: 0.3%;
+    height: 500px;
+    width: 98.7%;
+}
+
+.footer{
+    border-top: solid 0.15em white;
+    width: auto;
+    height: max-content;
+    margin: 1%; 
+    margin-top: 0%;  
+    justify-content: center;
+}
+
+.h1_footer
+{
+    text-align: center;
+    margin-top: 1.5%;
+    color: white;
+    font-size: 1.5em;
+}
+/* Estilos responsive */
+@media only screen and (max-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title{
+        font-size: 1.5em;
+    }
+    #img_header{
+        height: 30%;
+    }
+    #principal
+{
+    height: 50em;
+    width: 99.7%; 
+    border: none;
+}
+    .off{
+        display: none;
+    }
+    .div_main {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .div_main_img {
+        width: 50%;
+        height: 50%;
+    }
+    #img_principal {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+    #mapa {
+        width: 100%;
+        height: 400px;
+    }
+    .mapa {
+        width: 100%;
+        height: 100%;
+    }
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .div_main {
+        width: 95%;
+    }
+    #p_b {
+        font-size: 1em;
+    }
+    #bienvenida {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .div_main {
+        width: 100%;
+    }
+    .h1_main, .h1_footer {
+        font-size: 1.2em;
+    }
+    .p_main, #p_b {
+        font-size: 0.9em;
+    }
+    #bienvenida {
+        font-size: 1.2em;
+    }
+    #barra {
+        display: none;
+    }
+    .footer {
+        font-size: 0.8em;
+    }
+}
